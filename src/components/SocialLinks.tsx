@@ -34,6 +34,7 @@ const SocialLinks: React.FC = () => {
 
       </ul>
       <h4>Contact:</h4>
+      <p>WeChat: <a href="https://mmbiz.qpic.cn/sz_mmbiz_png/nPgXa3Zicnj8YLkn6j5HURqcTXgPvz8G9D5Ipnia3kOlLD1fKsKqyibvZn8LqWiclunHfhzdyvXRL7g0cMewvCYnTg/640?wx_fmt=png&from=appmsg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" target="_blank" rel="noopener noreferrer">二师兄</a></p>
       <p>Email: <a href="mailto:king101125s@gmail.com">king101125s@gmail.com</a></p>
       <p>Ph: <a href="tel:+8618123592515">+86 18123592515</a></p>
     </div>
