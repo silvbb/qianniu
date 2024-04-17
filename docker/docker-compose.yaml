@@ -1,0 +1,18 @@
+version: "3.1"
+services:
+  qianniu-nginx:
+    container_name: qianniu-nginx
+    image: nginx:latest
+    ports:
+      - "80:80"
+    networks:
+      - qianniu_network
+    volumes:
+      - ./html/qianniu/dist:/home/qianniu/projects/homepage
+      - ./conf/nginx.conf:/etc/nginx/nginx.conf
+      - ./nginx/logs:/var/log/nginx
+      - ./nginx/conf.d:/etc/nginx/conf.d
+
+networks:
+  qianniu_network:
+    driver: bridge

@@ -1,0 +1,43 @@
+import type React from 'react';
+import './SocialLinks.css';
+
+const SocialLinks: React.FC = () => {
+  return (
+    <div className="social-links">
+      <h4>在这里找我: </h4>
+      <ul>
+        <li>
+          <p> -  <a href="https://mp.weixin.qq.com/s/23DmkNrw0Imu8a44eg-xWg" target="_blank" rel="noopener noreferrer">
+            微信公众号：二师兄talks
+          </a> </p>
+        </li>
+        <li>
+          <p> -  <a href="https://github.com/mcks2000" target="_blank" rel="noopener noreferrer">
+            GitHub：mcks2000
+          </a>  </p>
+        </li>
+        <li>
+          <p> -  <a href="https://www.toutiao.com/c/user/token/MS4wLjABAAAA8QATErPBiyyzhq6qUDxybp50pGtcWTK2fhP6Ei2ABYM61UX3JKqnk2GkJ1LRQURa/?" target="_blank" rel="noopener noreferrer">
+            头条号：二师兄 talks
+          </a>  </p>
+        </li>
+        <li>
+          <p> -  <a href="https://www.zhihu.com/people/dev-daddy" target="_blank" rel="noopener noreferrer">
+            知乎号：二师兄 talk
+          </a>  </p>
+        </li>
+        <li>
+          <p> -  <a href="https://space.bilibili.com/12494395?spm_id_from=333.1007.0.0" target="_blank" rel="noopener noreferrer">
+            Bilibili：二师兄 talk
+          </a>  </p>
+        </li>
+
+      </ul>
+      <h4>Contact:</h4>
+      <p>Email: <a href="mailto:king101125s@gmail.com">king101125s@gmail.com</a></p>
+      <p>Ph: <a href="tel:+8618123592515">+86 18123592515</a></p>
+    </div>
+  );
+};
+
+export default SocialLinks;
