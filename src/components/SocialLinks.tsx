@@ -5,7 +5,7 @@ import './Header.css'
 const SocialLinks: React.FC = () => {
   return (
     <div className="social-links">
-      <h4>产品演示:</h4>
+      <h4>产品列表:</h4>
       <ul>
         <li>
           <p> -  <a href="https://movie.qianniu.city" target="_blank" rel="noopener noreferrer">
