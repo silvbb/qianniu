@@ -19,7 +19,7 @@ function Footer() {
               fill="#2C9EFF" p-id="22087"></path>
           </svg>
         </a>
-        <a href="https://github.com/qianniucity0" target="_blank">
+        <a href="https://github.com/qianniucity" target="_blank">
           <svg className="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
             p-id="21064" xmlnsXlink="http://www.w3.org/1999/xlink" width="16" height="16">
             <path
