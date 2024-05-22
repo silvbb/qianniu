@@ -32,8 +32,8 @@ const SocialLinks: React.FC = () => {
           </a> </p>
         </li>
         <li>
-          <p> -  <a href="https://github.com/mcks2000" target="_blank" rel="noopener noreferrer">
-            GitHub：mcks2000
+          <p> -  <a href="https://github.com/qianniucity0" target="_blank" rel="noopener noreferrer">
+            GitHub：qianniucity0
           </a>  </p>
         </li>
         <li>
