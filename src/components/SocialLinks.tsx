@@ -9,7 +9,12 @@ const SocialLinks: React.FC = () => {
       <ul>
         <li>
           <p> -  <a href="https://movie.qianniu.city" target="_blank" rel="noopener noreferrer">
-            骆驼电影侦探社
+            骆驼电影侦探社（已开源）
+          </a> </p>
+        </li>
+        <li>
+          <p> -  <a href="https://llm.qianniu.city" target="_blank" rel="noopener noreferrer">
+            LLM 入门课程 30 课
           </a> </p>
         </li>
         <li>
