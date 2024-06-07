@@ -18,6 +18,11 @@ const SocialLinks: React.FC = () => {
           </a> </p>
         </li>
         <li>
+          <p> -  <a href="https://ollama.qianniu.city" target="_blank" rel="noopener noreferrer">
+            Ollama 中文文档
+          </a> </p>
+        </li>
+        <li>
           <p> -  <a href="https://blog.qianniu.city" target="_blank" rel="noopener noreferrer">
             牵牛博客
           </a> </p>
