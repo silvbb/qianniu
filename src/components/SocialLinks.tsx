@@ -67,6 +67,11 @@ const SocialLinks: React.FC = () => {
             Bilibili：二师兄 talk
           </a>  </p>
         </li>
+        <li>
+          <p> -  <a href="https://www.xiaohongshu.com/user/profile/55741186faea9179d9990496?xhsshare=CopyLink&appuid=55741186faea9179d9990496&apptime=1724240091&share_id=bfada5486426451896142aaaf4651c3d" target="_blank" rel="noopener noreferrer">
+            小红书：二师兄
+          </a>  </p>
+        </li>
 
       </ul>
       <h4>Contact:</h4>
