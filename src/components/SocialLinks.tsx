@@ -8,16 +8,20 @@ const SocialLinks: React.FC = () => {
       <h4>产品列表:</h4>
       <ul>
         <li>
-          <p> -  <a href="https://movie.qianniu.city" target="_blank" rel="noopener noreferrer">
-            骆驼电影侦探社（已开源）
-          </a> </p>
-        </li>
-        <li>
           <p> -  <a href="https://v2a.qianniu.city/" target="_blank" rel="noopener noreferrer">
             Video2Audio：基于浏览器的视频转音频工具
           </a> </p>
         </li>
-
+        <li>
+          <p> -  <a href="https://squoosh.qianniu.city/" target="_blank" rel="noopener noreferrer">
+            squoosh：图片压缩工具，支持 WebP、AVIF、JPEG、PNG、GIF、SVG
+          </a> </p>
+        </li>
+        <li>
+          <p> -  <a href="https://movie.qianniu.city" target="_blank" rel="noopener noreferrer">
+            骆驼电影侦探社（已开源）
+          </a> </p>
+        </li>
         <li>
           <p> -  <a href="https://llm.qianniu.city" target="_blank" rel="noopener noreferrer">
             LLM 入门课程 30 课
