@@ -13,6 +13,12 @@ const SocialLinks: React.FC = () => {
           </a> </p>
         </li>
         <li>
+          <p> -  <a href="https://v2a.qianniu.city/" target="_blank" rel="noopener noreferrer">
+            Video2Audio：基于浏览器的视频转音频工具
+          </a> </p>
+        </li>
+
+        <li>
           <p> -  <a href="https://llm.qianniu.city" target="_blank" rel="noopener noreferrer">
             LLM 入门课程 30 课
           </a> </p>
