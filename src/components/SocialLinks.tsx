@@ -18,6 +18,11 @@ const SocialLinks: React.FC = () => {
           </a> </p>
         </li>
         <li>
+          <p> -  <a href="https://pdf.qianniu.city/" target="_blank" rel="noopener noreferrer">
+            Stirling PDF - 您的 PDF 文档处理专家
+          </a> </p>
+        </li>
+        <li>
           <p> -  <a href="https://movie.qianniu.city" target="_blank" rel="noopener noreferrer">
             骆驼电影侦探社（已开源）
           </a> </p>
