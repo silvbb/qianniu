@@ -3,7 +3,7 @@ import './Header.css'
 function Header() {
   return (
     <header className="header">
-      <p className="header-title">二师兄</p>
+      <p className="header-title">二师兄（牵牛智慧）</p>
       <div className="header-subtitle-container">
         <p className="header-subtitle">AI 软件工程师 & 实时更新最新 AI 资讯</p>
         <img src="/Peacock.png" alt="Peacock" width="25" height="25" />
