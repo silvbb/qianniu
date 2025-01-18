@@ -1,5 +1,5 @@
 import type React from 'react';
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useCallback } from 'react';
 import './NBodySimulation.css';
 
 interface Body {
@@ -13,21 +13,9 @@ interface Body {
 const NBodySimulation: React.FC = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const contextRef = useRef<CanvasRenderingContext2D | null>(null);
-  const bodies: Body[] = [];
+  const bodiesRef = useRef<Body[]>([]);
 
-  useEffect(() => {
-    const canvas = canvasRef.current;
-    if (canvas) {
-      const ctx = canvas.getContext('2d');
-      if (ctx) {
-        contextRef.current = ctx;
-        createBodies();
-        requestAnimationFrame(animate);
-      }
-    }
-  }, []);
-
-  const createBodies = () => {
+  const createBodies = useCallback(() => {
     // Add three bodies in the center
     for (let i = 0; i < 1; i++) {
       const body: Body = {
@@ -37,18 +25,18 @@ const NBodySimulation: React.FC = () => {
         vy: Math.random() * 2 - 1,
         mass: i * i,
       };
-      bodies.push(body);
+      bodiesRef.current.push(body);
     }
-  };
+  }, []);
 
-  const animate = () => {
+  const animate = useCallback(() => {
     const ctx = contextRef.current;
     if (ctx) {
       // Clear the canvas
       ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height);
 
       // Update positions and handle bouncing
-      bodies.forEach(body => {
+      bodiesRef.current.forEach(body => {
         body.x += body.vx;
         body.y += body.vy;
 
@@ -65,16 +53,28 @@ const NBodySimulation: React.FC = () => {
 
       // Draw bodies
       ctx.fillStyle = '#51c8cc';
-      bodies.forEach(body => {
+      bodiesRef.current.forEach(body => {
         ctx.beginPath();
-        ctx.arc(body.x, body.y, 10, 0, 2 * Math.PI); // Larger bodies (radius 10)
+        ctx.arc(body.x, body.y, 10, 0, 2 * Math.PI);
         ctx.fill();
       });
 
       // Request the next animation frame
       requestAnimationFrame(animate);
     }
-  };
+  }, []);
+
+  useEffect(() => {
+    const canvas = canvasRef.current;
+    if (canvas) {
+      const ctx = canvas.getContext('2d');
+      if (ctx) {
+        contextRef.current = ctx;
+        createBodies();
+        requestAnimationFrame(animate);
+      }
+    }
+  }, [createBodies, animate]);
 
   return (
     <div className="canvas-container">
