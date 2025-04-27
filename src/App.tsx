@@ -1,7 +1,7 @@
 import "./App.css";
 import Header from "./components/Header";
 import GradientCircle from "./components/GradientCircle";
-import Spline from "@splinetool/react-spline";
+// import Spline from "@splinetool/react-spline";
 import Footer from "./components/Footer";
 import SocialLinks from "./components/SocialLinks";
 import GoogleAd from "./components/GoogleAd";
